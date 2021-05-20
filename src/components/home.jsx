@@ -7,7 +7,7 @@ import ecommService from "../services/ecommService";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = { spProd: [] };
+    this.state = { spProd: [],loading:true };
   }
 
   componentDidMount() {
@@ -16,7 +16,8 @@ class Home extends Component {
       console.log(this.state.spProd[0].Image);
     });
   }
-  render() {
+  render() 
+  {
     return (
       <div>
         <Subheader2 />
